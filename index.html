@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta id="meta-description" name="description" content="Responsive esthetician website for brow lamination, Korean lash lifts, waxing, and facials.">
+  <title>Gabriela Studio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="background-glow background-glow-left" aria-hidden="true"></div>
+  <div class="background-glow background-glow-right" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top">
+      <span class="brand-mark">GS</span>
+      <span class="brand-text">
+        <strong>Gabriela</strong>
+        <span>Studio</span>
+      </span>
+    </a>
+
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a id="nav-services" href="#services">Services</a>
+      <a id="nav-experience" href="#experience">Experience</a>
+      <a id="nav-faq" href="#faq">FAQ</a>
+      <a id="nav-contact" href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="language-switch" id="language-switch" type="button" aria-label="Switch site language to Spanish" aria-pressed="false">
+        <span class="language-switch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false">
+            <path d="M4 12h16"></path>
+            <path d="M12 4a13.2 13.2 0 0 1 0 16"></path>
+            <path d="M12 4a13.2 13.2 0 0 0 0 16"></path>
+            <path d="M6.5 7.5h11"></path>
+            <path d="M6.5 16.5h11"></path>
+          </svg>
+        </span>
+        <span class="language-switch-label" id="language-switch-label">Español</span>
+      </button>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only" id="menu-toggle-label">Toggle navigation</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow" id="hero-eyebrow">Luxury esthetics studio</p>
+        <h1 id="hero-title">Refined esthetics for luminous skin, sculpted brows, and effortless confidence.</h1>
+        <p class="hero-text" id="hero-description">
+          Gabriela Studio offers brow, lash, waxing, and facial treatments in a warm,
+          detail-driven setting designed to leave every client polished, relaxed, and radiant.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" id="hero-primary-cta" href="#contact">Book a Consultation</a>
+          <a class="button button-secondary" id="hero-secondary-cta" href="#services">Explore Services</a>
+        </div>
+        <ul class="hero-highlights" id="hero-highlights" aria-label="Business highlights">
+          <li>
+            <span class="hero-highlight-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M12 3.5 14.5 6l3.5.5.5 3.5 2.5 2.5-2.5 2.5-.5 3.5-3.5.5-2.5 2.5-2.5-2.5-3.5-.5-.5-3.5L3.5 12.5 6 10l.5-3.5 3.5-.5Z"></path>
+                <path d="m9.3 12.3 1.8 1.8 3.7-4"></path>
+              </svg>
+            </span>
+            <span id="hero-highlight-1">Licensed esthetician</span>
+          </li>
+          <li>
+            <span class="hero-highlight-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M12 12a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"></path>
+                <path d="M5.5 19.5a6.5 6.5 0 0 1 13 0"></path>
+              </svg>
+            </span>
+            <span id="hero-highlight-2">One-on-one appointments</span>
+          </li>
+          <li>
+            <span class="hero-highlight-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M12 3.5 13.8 8.2 18.5 10 13.8 11.8 12 16.5 10.2 11.8 5.5 10l4.7-1.8Z"></path>
+                <path d="m18.5 4.5.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7Z"></path>
+              </svg>
+            </span>
+            <span id="hero-highlight-3">Luxury-inspired care</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero-panel">
+        <div class="hero-card hero-card-main">
+          <p class="hero-card-label" id="featured-service-label">Featured service</p>
+          <h2 id="featured-service-name">Korean Lash Lift</h2>
+          <p id="featured-service-summary">
+            A sleek, low-maintenance lash enhancement designed to brighten the eyes and keep your look effortless.
+          </p>
+          <div class="hero-service-meta">
+            <span id="featured-service-time">Best for effortless daily glam</span>
+            <span id="featured-service-focus">Natural-looking lift and definition</span>
+          </div>
+        </div>
+
+        <div class="hero-card hero-card-side">
+          <p class="hero-card-label" id="studio-approach-label">The studio approach</p>
+          <div class="expectation-grid">
+            <article>
+              <strong id="approach-title-1">Refined consultation</strong>
+              <p id="approach-copy-1">Every appointment starts with a quick consultation and a plan tailored to the service.</p>
+            </article>
+            <article>
+              <strong id="approach-title-2">Comfort-first care</strong>
+              <p id="approach-copy-2">A clean, calm experience with careful prep, precise service, and thoughtful aftercare.</p>
+            </article>
+            <article>
+              <strong id="approach-title-3">Soft luxury results</strong>
+              <p id="approach-copy-3">The goal is simple: polished brows, smooth skin, and glow that feels easy to maintain.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-services" id="services">
+      <div class="section-heading">
+        <p class="eyebrow" id="services-eyebrow">Services</p>
+        <h2 id="services-title">Signature treatments tailored to your features, skin, and routine.</h2>
+        <p id="services-description">
+          Browse the spotlight to preview each service, who it is best for, and the kind of polished finish it is known for.
+        </p>
+      </div>
+
+      <div class="service-layout">
+        <div class="service-tabs" id="service-tabs-group" role="tablist" aria-label="Service spotlight buttons">
+          <button class="service-tab is-active" type="button" data-service="brow-lamination" aria-pressed="true">Brow Lamination</button>
+          <button class="service-tab" type="button" data-service="korean-lash-lift" aria-pressed="false">Korean Lash Lift</button>
+          <button class="service-tab" type="button" data-service="body-wax" aria-pressed="false">Body Wax</button>
+          <button class="service-tab" type="button" data-service="brazilian-wax" aria-pressed="false">Brazilian Wax</button>
+          <button class="service-tab" type="button" data-service="facials" aria-pressed="false">Facials</button>
+        </div>
+
+        <article class="service-spotlight">
+          <p class="service-spotlight-label" id="service-spotlight-label">Service spotlight</p>
+          <h3 id="service-title">Brow Lamination</h3>
+          <p id="service-description">
+            Smooth, set, and shape your brows for a fuller, softly brushed-up finish that lasts beyond daily styling.
+          </p>
+          <div class="service-details">
+            <div>
+              <span class="detail-label" id="service-detail-best-for-label">Perfect for</span>
+              <p id="service-best-for">Clients who want more control, fluff, and definition in their natural brow shape.</p>
+            </div>
+            <div>
+              <span class="detail-label" id="service-detail-result-label">Results feel</span>
+              <p id="service-result">Clean, lifted, and polished without needing much makeup.</p>
+            </div>
+            <div>
+              <span class="detail-label" id="service-detail-vibe-label">Appointment vibe</span>
+              <p id="service-vibe">A detailed shaping service with a finish that reads effortless and put together.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="section-heading">
+        <p class="eyebrow" id="experience-eyebrow">Client Experience</p>
+        <h2 id="experience-title">Thoughtful service from consultation through aftercare.</h2>
+      </div>
+
+      <div class="experience-grid">
+        <article class="experience-card">
+          <span>01</span>
+          <h3 id="experience-card-title-1">Personalized prep</h3>
+          <p id="experience-card-copy-1">Every appointment begins with a quick conversation about goals, sensitivities, and desired results.</p>
+        </article>
+        <article class="experience-card">
+          <span>02</span>
+          <h3 id="experience-card-title-2">Precision service</h3>
+          <p id="experience-card-copy-2">From brow mapping to waxing care and facial flow, each step is intentional and tailored.</p>
+        </article>
+        <article class="experience-card">
+          <span>03</span>
+          <h3 id="experience-card-title-3">Aftercare support</h3>
+          <p id="experience-card-copy-3">Clients leave with guidance on maintaining results and getting the most out of their service.</p>
+        </article>
+      </div>
+
+      <div class="promise-banner">
+        <div>
+          <p class="eyebrow" id="philosophy-eyebrow">Studio philosophy</p>
+          <h3 id="philosophy-title">Soft luxury, careful technique, and an experience designed to feel personal.</h3>
+        </div>
+        <p id="philosophy-copy">
+          Every appointment is approached with attention to comfort, detail, and results that feel polished rather than overdone.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-faq" id="faq">
+      <div class="section-heading">
+        <p class="eyebrow" id="faq-eyebrow">FAQ</p>
+        <h2 id="faq-title">Questions before your appointment?</h2>
+      </div>
+
+      <div class="faq-list">
+        <article class="faq-item">
+          <button class="faq-question" id="faq-question-1" type="button" aria-expanded="false">
+            What should I book if I am not sure where to start?
+          </button>
+          <div class="faq-answer">
+            <p id="faq-answer-1">If you are unsure which service fits your goals, reach out before booking and you can be guided toward the right brow, lash, waxing, or facial appointment.</p>
+          </div>
+        </article>
+        <article class="faq-item">
+          <button class="faq-question" id="faq-question-2" type="button" aria-expanded="false">
+            How should I prepare for a lash or waxing appointment?
+          </button>
+          <div class="faq-answer">
+            <p id="faq-answer-2">Arrive with clean skin, avoid heavy oils or makeup around the treatment area, and follow any pre-appointment guidance shared when booking.</p>
+          </div>
+        </article>
+        <article class="faq-item">
+          <button class="faq-question" id="faq-question-3" type="button" aria-expanded="false">
+            Are facials customized for different skin needs?
+          </button>
+          <div class="faq-answer">
+            <p id="faq-answer-3">Yes. Facial services can be adjusted around hydration, sensitivity, texture, and glow goals so the treatment feels personal to your skin.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-card">
+        <div class="contact-copy">
+          <p class="eyebrow" id="contact-eyebrow">Book</p>
+          <h2 id="contact-title">Ready to reserve your next appointment?</h2>
+          <p id="contact-description">
+            Use the details below to start your booking inquiry. These can be updated with the real business information before launch.
+          </p>
+        </div>
+
+        <div class="contact-details">
+          <div>
+            <span class="detail-label" id="contact-phone-label">Phone</span>
+            <p>(555) 123-4567</p>
+          </div>
+          <div>
+            <span class="detail-label" id="contact-instagram-label">Instagram</span>
+            <p>@gabrielastudio</p>
+          </div>
+          <div>
+            <span class="detail-label" id="contact-location-label">Location</span>
+            <p id="contact-location-value">Your studio or salon location here</p>
+          </div>
+          <a class="button button-primary" id="contact-email-cta" href="mailto:hello@gabrielastudio.com?subject=Booking%20Inquiry">Email Booking Inquiry</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year"></span> <span id="footer-copy">Gabriela Studio | By appointment only</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
