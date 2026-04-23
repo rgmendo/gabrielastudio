@@ -164,6 +164,7 @@ const translations = {
     navigation: {
       ariaLabel: "Primary",
       services: "Services",
+      pricing: "Pricing",
       experience: "Experience",
       faq: "FAQ",
       contact: "Contact"
@@ -216,6 +217,36 @@ const translations = {
         result: "Results feel",
         vibe: "Appointment vibe"
       }
+    },
+    pricing: {
+      eyebrow: "Pricing",
+      title: "Straightforward pricing for the studio's most-requested services.",
+      description:
+        "Browse by category to quickly find lash, brow, and waxing services at a glance.",
+      note: "All prices shown in USD.",
+      categories: [
+        {
+          title: "Lashes & Brows",
+          ariaLabel: "Lashes and brows pricing",
+          items: [
+            { name: "Korean Lash Lift & Tint", price: "$30" },
+            { name: "Korean Lash Lift", price: "$25" },
+            { name: "Brow Lamination", price: "$25" },
+            { name: "Brow Lamination & Tint", price: "$30" }
+          ]
+        },
+        {
+          title: "Waxing",
+          ariaLabel: "Waxing pricing",
+          items: [
+            { name: "Brow Wax", price: "$5" },
+            { name: "Lip Wax", price: "$5" },
+            { name: "Sideburns Wax", price: "$10" },
+            { name: "Armpit Wax", price: "$15" },
+            { name: "Full Arms", price: "$20" }
+          ]
+        }
+      ]
     },
     experience: {
       eyebrow: "Client Experience",
@@ -285,6 +316,7 @@ const translations = {
     navigation: {
       ariaLabel: "Principal",
       services: "Servicios",
+      pricing: "Precios",
       experience: "Experiencia",
       faq: "FAQ",
       contact: "Contacto"
@@ -337,6 +369,36 @@ const translations = {
         result: "Resultado",
         vibe: "Experiencia"
       }
+    },
+    pricing: {
+      eyebrow: "Precios",
+      title: "Precios claros para los servicios más solicitados del estudio.",
+      description:
+        "Explora por categoria para ver rapidamente los servicios de pestanas, cejas y depilacion.",
+      note: "Todos los precios estan en USD.",
+      categories: [
+        {
+          title: "Pestanas y cejas",
+          ariaLabel: "Precios de pestanas y cejas",
+          items: [
+            { name: "Lash lift coreano y tinte", price: "$30" },
+            { name: "Lash lift coreano", price: "$25" },
+            { name: "Laminado de cejas", price: "$25" },
+            { name: "Laminado de cejas y tinte", price: "$30" }
+          ]
+        },
+        {
+          title: "Depilacion",
+          ariaLabel: "Precios de depilacion",
+          items: [
+            { name: "Depilacion de cejas", price: "$5" },
+            { name: "Depilacion de labio", price: "$5" },
+            { name: "Depilacion de patillas", price: "$10" },
+            { name: "Depilacion de axilas", price: "$15" },
+            { name: "Brazos completos", price: "$20" }
+          ]
+        }
+      ]
     },
     experience: {
       eyebrow: "Experiencia del cliente",
@@ -404,6 +466,7 @@ const elements = {
   metaDescription: document.querySelector("#meta-description"),
   siteNav: document.querySelector("#site-nav"),
   navServices: document.querySelector("#nav-services"),
+  navPricing: document.querySelector("#nav-pricing"),
   navExperience: document.querySelector("#nav-experience"),
   navFaq: document.querySelector("#nav-faq"),
   navContact: document.querySelector("#nav-contact"),
@@ -435,6 +498,14 @@ const elements = {
   serviceDetailBestForLabel: document.querySelector("#service-detail-best-for-label"),
   serviceDetailResultLabel: document.querySelector("#service-detail-result-label"),
   serviceDetailVibeLabel: document.querySelector("#service-detail-vibe-label"),
+  pricingEyebrow: document.querySelector("#pricing-eyebrow"),
+  pricingTitle: document.querySelector("#pricing-title"),
+  pricingDescription: document.querySelector("#pricing-description"),
+  pricingCategoryTitle1: document.querySelector("#pricing-category-title-1"),
+  pricingCategoryTitle2: document.querySelector("#pricing-category-title-2"),
+  pricingList1: document.querySelector("#pricing-list-1"),
+  pricingList2: document.querySelector("#pricing-list-2"),
+  pricingNote: document.querySelector("#pricing-note"),
   experienceEyebrow: document.querySelector("#experience-eyebrow"),
   experienceTitle: document.querySelector("#experience-title"),
   experienceCardTitle1: document.querySelector("#experience-card-title-1"),
@@ -508,6 +579,7 @@ function updateStaticCopy(language) {
 
   elements.siteNav?.setAttribute("aria-label", copy.navigation.ariaLabel);
   elements.navServices.textContent = copy.navigation.services;
+  elements.navPricing.textContent = copy.navigation.pricing;
   elements.navExperience.textContent = copy.navigation.experience;
   elements.navFaq.textContent = copy.navigation.faq;
   elements.navContact.textContent = copy.navigation.contact;
@@ -543,6 +615,7 @@ function updateStaticCopy(language) {
   elements.serviceDetailBestForLabel.textContent = copy.services.detailLabels.bestFor;
   elements.serviceDetailResultLabel.textContent = copy.services.detailLabels.result;
   elements.serviceDetailVibeLabel.textContent = copy.services.detailLabels.vibe;
+  renderPricing(copy.pricing);
 
   elements.experienceEyebrow.textContent = copy.experience.eyebrow;
   elements.experienceTitle.textContent = copy.experience.title;
@@ -583,6 +656,50 @@ function updateStaticCopy(language) {
     if (service) {
       tab.textContent = service.name;
     }
+  });
+}
+
+function renderPricing(pricing) {
+  const categoryTitles = [
+    elements.pricingCategoryTitle1,
+    elements.pricingCategoryTitle2
+  ];
+  const categoryLists = [
+    elements.pricingList1,
+    elements.pricingList2
+  ];
+
+  elements.pricingEyebrow.textContent = pricing.eyebrow;
+  elements.pricingTitle.textContent = pricing.title;
+  elements.pricingDescription.textContent = pricing.description;
+  elements.pricingNote.textContent = pricing.note;
+
+  pricing.categories.forEach((category, index) => {
+    const titleElement = categoryTitles[index];
+    const listElement = categoryLists[index];
+
+    if (!titleElement || !listElement) {
+      return;
+    }
+
+    titleElement.textContent = category.title;
+    listElement.setAttribute("aria-label", category.ariaLabel);
+    listElement.replaceChildren();
+
+    category.items.forEach((item) => {
+      const listItem = document.createElement("li");
+      const name = document.createElement("span");
+      const price = document.createElement("span");
+
+      name.className = "pricing-item-name";
+      name.textContent = item.name;
+
+      price.className = "pricing-item-price";
+      price.textContent = item.price;
+
+      listItem.append(name, price);
+      listElement.appendChild(listItem);
+    });
   });
 }
 
