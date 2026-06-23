@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rgmendo.github.io/gabrielastudio/sitemap.xml

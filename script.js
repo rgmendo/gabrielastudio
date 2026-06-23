@@ -3,7 +3,7 @@ const localizedServices = {
     "brow-lamination": {
       name: "Brow Lamination",
       description:
-        "Smooth, set, and shape your brows for a fuller, softly brushed-up finish that lasts beyond daily styling.",
+        "Smooth, set, and shape your brows in Temecula for a fuller, softly brushed-up finish that lasts beyond daily styling.",
       bestFor:
         "Clients who want more control, fluff, and definition in their natural brow shape.",
       result:
@@ -18,22 +18,22 @@ const localizedServices = {
     "korean-lash-lift": {
       name: "Korean Lash Lift",
       description:
-        "A refined lash lift focused on sleek, natural-looking curl and eye-brightening definition without extensions.",
+        "A refined Korean lash lift in Temecula focused on sleek, natural-looking curl and eye-brightening definition without extensions.",
       bestFor:
-        "Clients who want a polished lash look that still feels light, clean, and low-maintenance.",
+        "Clients who want lifted lashes, low-maintenance definition, and a fresh everyday look without extensions.",
       result:
         "Eyes look more open, lashes look longer, and the everyday routine stays simple.",
       vibe:
-        "An elevated beauty service for subtle drama and a graceful finish.",
+        "A calm, detailed lash service with a polished finish that still looks natural.",
       heroSummary:
-        "A sleek, low-maintenance lash enhancement designed to brighten the eyes and keep your look effortless.",
+        "A low-maintenance Korean lash lift designed to brighten the eyes and keep your look effortless.",
       heroTime: "Best for effortless daily glam",
       heroFocus: "Natural-looking lift and definition"
     },
     "body-wax": {
       name: "Body Wax",
       description:
-        "Smooth skin services for larger areas with a comfort-minded process and attention to clean results.",
+        "Temecula waxing services for larger areas with a comfort-minded process and attention to clean results.",
       bestFor:
         "Clients looking for polished, longer-lasting smoothness for arms, legs, back, or other body areas.",
       result:
@@ -48,7 +48,7 @@ const localizedServices = {
     "brazilian-wax": {
       name: "Brazilian Wax",
       description:
-        "A detailed waxing service focused on smooth results, discretion, and client comfort from start to finish.",
+        "A detailed Brazilian wax in Temecula focused on smooth results, discretion, and client comfort from start to finish.",
       bestFor:
         "Clients who want a fresh, confidence-boosting maintenance routine with thoughtful aftercare guidance.",
       result:
@@ -63,7 +63,7 @@ const localizedServices = {
     facials: {
       name: "Facials",
       description:
-        "Customized facial treatments designed to refresh skin, support your barrier, and leave you with a healthy glow.",
+        "Customized facials in Temecula designed to refresh skin, support your barrier, and leave you with a healthy glow.",
       bestFor:
         "Clients wanting hydration, renewal, and a relaxing treatment that still feels results-driven.",
       result:
@@ -158,9 +158,9 @@ const localizedServices = {
 const translations = {
   en: {
     lang: "en",
-    title: "Gabriela Studio",
+    title: "Gabriela Miranda Studio | Korean Lash Lift & Esthetician in Temecula, CA",
     metaDescription:
-      "Responsive esthetician website for brow lamination, Korean lash lifts, waxing, and facials.",
+      "Gabriela Miranda Studio is a Temecula esthetician at Sola Salon Studios offering Korean lash lifts, waxing, brow lamination, and custom facials. Book online.",
     navigation: {
       ariaLabel: "Primary",
       services: "Services",
@@ -175,18 +175,19 @@ const translations = {
       ariaLabel: "Switch site language to Spanish"
     },
     hero: {
-      eyebrow: "Luxury esthetics studio",
+      eyebrow: "Temecula esthetician studio",
       title:
-        "Refined esthetics for luminous skin, sculpted brows, and effortless confidence.",
+        "Korean lash lifts, waxing, and facials in Temecula, CA.",
       description:
-        "Gabriela Studio offers brow, lash, waxing, and facial treatments in a warm, detail-driven setting designed to leave every client polished, relaxed, and radiant.",
-      primaryCta: "Book a Consultation",
+        "Gabriela Miranda Studio offers lash, brow, waxing, and facial treatments at Sola Salon Studios with warm, detail-driven care and polished, natural-looking results.",
+      primaryCta: "Book Online",
+      primaryHref: "https://gabrielastudio.glossgenius.com",
       secondaryCta: "Explore Services",
       highlightsAriaLabel: "Business highlights",
       highlights: [
         "Licensed esthetician",
-        "One-on-one appointments",
-        "Luxury-inspired care"
+        "Sola Salon Studios in Temecula",
+        "One-on-one appointments"
       ],
       featuredLabel: "Featured service",
       approachLabel: "The studio approach",
@@ -209,7 +210,7 @@ const translations = {
       eyebrow: "Services",
       title: "Signature treatments tailored to your features, skin, and routine.",
       description:
-        "Browse the spotlight to preview each service, who it is best for, and the kind of polished finish it is known for.",
+        "Explore Korean lash lifts, waxing, brow lamination, and facials designed for natural-looking results and recurring self-care.",
       tabListAriaLabel: "Service spotlight buttons",
       spotlightLabel: "Service spotlight",
       detailLabels: {
@@ -222,7 +223,7 @@ const translations = {
       eyebrow: "Pricing",
       title: "Straightforward pricing for the studio's most-requested services.",
       description:
-        "Browse by category to quickly find lash, brow, and waxing services at a glance.",
+        "Browse lash, brow, waxing, and facial services at a glance. Book online for current availability.",
       note: "All prices shown in USD.",
       categories: [
         {
@@ -244,6 +245,15 @@ const translations = {
             { name: "Sideburns Wax", price: "$10" },
             { name: "Armpit Wax", price: "$15" },
             { name: "Full Arms", price: "$20" }
+          ]
+        },
+        {
+          title: "Facials",
+          ariaLabel: "Facials pricing",
+          items: [
+            { name: "Skin Reset Facial", price: "$60" },
+            { name: "Signature Facial", price: "$95" },
+            { name: "Advanced Facial", price: "$130" }
           ]
         }
       ]
@@ -296,23 +306,27 @@ const translations = {
       eyebrow: "Book",
       title: "Ready to reserve your next appointment?",
       description:
-        "Use the details below to start your booking inquiry. These can be updated with the real business information before launch.",
+        "Book online for Thursday through Sunday appointments at Gabriela Miranda Studio inside Sola Salon Studios in Temecula.",
       labels: {
-        phone: "Phone",
+        phone: "Booking",
         instagram: "Instagram",
-        location: "Location"
+        location: "Location",
+        hours: "Hours"
       },
-      locationValue: "Your studio or salon location here",
-      emailCta: "Email Booking Inquiry",
-      emailHref: "mailto:hello@gabrielastudio.com?subject=Booking%20Inquiry"
+      phoneValue: "Online booking through GlossGenius",
+      instagramValue: "@gabriela.studio.esthetics",
+      locationValue: "Sola Salon Studios, Suite 8, Temecula, CA",
+      hoursValue: "Thu-Fri 9:30am-6pm; Sat 9:30am-5pm; Sun 9:30am-2pm",
+      emailCta: "Book Online",
+      emailHref: "https://gabrielastudio.glossgenius.com"
     },
-    footerCopy: "Gabriela Studio | By appointment only"
+    footerCopy: "Gabriela Miranda Studio | Temecula, CA"
   },
   es: {
     lang: "es",
-    title: "Gabriela Studio",
+    title: "Gabriela Miranda Studio | Esteticista en Temecula, CA",
     metaDescription:
-      "Sitio web adaptable para una esteticista con laminado de cejas, lash lift coreano, depilación corporal, depilación brasileña y faciales.",
+      "Gabriela Miranda Studio ofrece lash lift coreano, depilacion, laminado de cejas y faciales personalizados en Temecula, CA. Reserva en linea.",
     navigation: {
       ariaLabel: "Principal",
       services: "Servicios",
@@ -327,18 +341,19 @@ const translations = {
       ariaLabel: "Cambiar el sitio al inglés"
     },
     hero: {
-      eyebrow: "Estudio de estética de lujo",
+      eyebrow: "Estudio de estetica en Temecula",
       title:
-        "Estética refinada para una piel luminosa, cejas esculpidas y una confianza natural.",
+        "Lash lift coreano, depilacion y faciales en Temecula, CA.",
       description:
-        "Gabriela Studio ofrece tratamientos de cejas, pestañas, depilación y faciales en un ambiente cálido y cuidado al detalle, pensado para que cada cliente salga pulida, relajada y radiante.",
-      primaryCta: "Reserva una consulta",
+        "Gabriela Miranda Studio ofrece tratamientos de pestanas, cejas, depilacion y faciales en Sola Salon Studios con atencion calida, detallada y resultados naturales.",
+      primaryCta: "Reservar en linea",
+      primaryHref: "https://gabrielastudio.glossgenius.com",
       secondaryCta: "Explorar servicios",
       highlightsAriaLabel: "Aspectos destacados del estudio",
       highlights: [
         "Esteticista licenciada",
-        "Citas personalizadas",
-        "Cuidado inspirado en el lujo"
+        "Sola Salon Studios en Temecula",
+        "Citas personalizadas"
       ],
       featuredLabel: "Servicio destacado",
       approachLabel: "La experiencia del estudio",
@@ -361,7 +376,7 @@ const translations = {
       eyebrow: "Servicios",
       title: "Tratamientos exclusivos adaptados a tus facciones, tu piel y tu rutina.",
       description:
-        "Explora el servicio destacado para conocer cada tratamiento, para quién está pensado y el tipo de acabado pulido que ofrece.",
+        "Explora lash lift coreano, depilacion, laminado de cejas y faciales pensados para resultados naturales y cuidado recurrente.",
       tabListAriaLabel: "Botones de servicios destacados",
       spotlightLabel: "Servicio destacado",
       detailLabels: {
@@ -374,7 +389,7 @@ const translations = {
       eyebrow: "Precios",
       title: "Precios claros para los servicios más solicitados del estudio.",
       description:
-        "Explora por categoria para ver rapidamente los servicios de pestanas, cejas y depilacion.",
+        "Explora servicios de pestanas, cejas, depilacion y faciales. Reserva en linea para ver disponibilidad actual.",
       note: "Todos los precios estan en USD.",
       categories: [
         {
@@ -396,6 +411,15 @@ const translations = {
             { name: "Depilacion de patillas", price: "$10" },
             { name: "Depilacion de axilas", price: "$15" },
             { name: "Brazos completos", price: "$20" }
+          ]
+        },
+        {
+          title: "Faciales",
+          ariaLabel: "Precios de faciales",
+          items: [
+            { name: "Skin Reset Facial", price: "$60" },
+            { name: "Signature Facial", price: "$95" },
+            { name: "Advanced Facial", price: "$130" }
           ]
         }
       ]
@@ -448,17 +472,21 @@ const translations = {
       eyebrow: "Reserva",
       title: "¿Lista para reservar tu próxima cita?",
       description:
-        "Usa la información de abajo para iniciar tu solicitud de cita. Puedes actualizar estos datos con la información real del negocio antes del lanzamiento.",
+        "Reserva en linea para citas de jueves a domingo en Gabriela Miranda Studio dentro de Sola Salon Studios en Temecula.",
       labels: {
-        phone: "Teléfono",
+        phone: "Reserva",
         instagram: "Instagram",
-        location: "Ubicación"
+        location: "Ubicacion",
+        hours: "Horario"
       },
-      locationValue: "Ubicación de tu estudio o salón aquí",
-      emailCta: "Enviar consulta por correo",
-      emailHref: "mailto:hello@gabrielastudio.com?subject=Consulta%20de%20cita"
+      phoneValue: "Reservas en linea por GlossGenius",
+      instagramValue: "@gabriela.studio.esthetics",
+      locationValue: "Sola Salon Studios, Suite 8, Temecula, CA",
+      hoursValue: "Jue-Vie 9:30am-6pm; Sab 9:30am-5pm; Dom 9:30am-2pm",
+      emailCta: "Reservar en linea",
+      emailHref: "https://gabrielastudio.glossgenius.com"
     },
-    footerCopy: "Gabriela Studio | Solo con cita"
+    footerCopy: "Gabriela Miranda Studio | Temecula, CA"
   }
 };
 
@@ -532,6 +560,8 @@ const elements = {
   contactInstagramLabel: document.querySelector("#contact-instagram-label"),
   contactLocationLabel: document.querySelector("#contact-location-label"),
   contactLocationValue: document.querySelector("#contact-location-value"),
+  contactHoursLabel: document.querySelector("#contact-hours-label"),
+  contactHoursValue: document.querySelector("#contact-hours-value"),
   contactEmailCta: document.querySelector("#contact-email-cta"),
   footerCopy: document.querySelector("#footer-copy"),
   featuredServiceName: document.querySelector("#featured-service-name"),
@@ -553,7 +583,7 @@ const faqQuestions = Array.from(document.querySelectorAll(".faq-question"));
 const sections = Array.from(document.querySelectorAll("main section"));
 const navLinks = Array.from(document.querySelectorAll(".site-nav a"));
 
-let currentServiceKey = "brow-lamination";
+let currentServiceKey = "korean-lash-lift";
 let currentLanguage = getInitialLanguage();
 
 function getInitialLanguage() {
@@ -593,6 +623,7 @@ function updateStaticCopy(language) {
   elements.heroTitle.textContent = copy.hero.title;
   elements.heroDescription.textContent = copy.hero.description;
   elements.heroPrimaryCta.textContent = copy.hero.primaryCta;
+  elements.heroPrimaryCta.href = copy.hero.primaryHref;
   elements.heroSecondaryCta.textContent = copy.hero.secondaryCta;
   elements.heroHighlights?.setAttribute("aria-label", copy.hero.highlightsAriaLabel);
   elements.heroHighlight1.textContent = copy.hero.highlights[0];
@@ -644,7 +675,11 @@ function updateStaticCopy(language) {
   elements.contactPhoneLabel.textContent = copy.contact.labels.phone;
   elements.contactInstagramLabel.textContent = copy.contact.labels.instagram;
   elements.contactLocationLabel.textContent = copy.contact.labels.location;
+  elements.contactHoursLabel.textContent = copy.contact.labels.hours;
+  elements.contactPhoneLabel.nextElementSibling.textContent = copy.contact.phoneValue;
+  elements.contactInstagramLabel.nextElementSibling.textContent = copy.contact.instagramValue;
   elements.contactLocationValue.textContent = copy.contact.locationValue;
+  elements.contactHoursValue.textContent = copy.contact.hoursValue;
   elements.contactEmailCta.textContent = copy.contact.emailCta;
   elements.contactEmailCta.href = copy.contact.emailHref;
 
@@ -660,14 +695,8 @@ function updateStaticCopy(language) {
 }
 
 function renderPricing(pricing) {
-  const categoryTitles = [
-    elements.pricingCategoryTitle1,
-    elements.pricingCategoryTitle2
-  ];
-  const categoryLists = [
-    elements.pricingList1,
-    elements.pricingList2
-  ];
+  const categoryTitles = Array.from(document.querySelectorAll(".pricing-category-title"));
+  const categoryLists = Array.from(document.querySelectorAll(".pricing-list"));
 
   elements.pricingEyebrow.textContent = pricing.eyebrow;
   elements.pricingTitle.textContent = pricing.title;
